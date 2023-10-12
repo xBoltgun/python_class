@@ -145,7 +145,39 @@ flowchart LR
 
 - [第二部分 Python变量、简单数据类型和列表简介](#第二部分)
 - [第三部分 Codewars Kata挑战](#第三部分)
+  
+  1. 第一题
+  ```python
+  def nearest_sq(n):
+    return round(n ** 0.5) ** 2
+  ```
+  2. 第二题
+  ```python
+  def bouncingBall(h, bounce, window):
+    if not 0 < bounce < 1: return -1
+    count = 0
+    while h > window:
+        count += 1
+        h *= bounce
+        if h > window: count += 1
+    return count or -1
+  ```
+  3. 第三题
+  ```python
+  def get_count(sentence):
+    return sentence.count('a')+sentence.count('e')+sentence.count('i')+sentence.count('o')+sentence.count('u')
+    pass
+  ```
+  4. 第四题
+  ```python
+  def even_or_odd(number):
+    if number%2 == 0:
+        return "Even"
+    else :
+        return "odd"
+  ```
 - [第四部分 使用Mermaid绘制程序流程图](#第四部分)
+
 
 注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
 
