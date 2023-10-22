@@ -178,6 +178,47 @@ flowchart LR
   ```
 - [第四部分 使用Mermaid绘制程序流程图](#第四部分)
 
+1. 第一题
+
+```mermaid
+flowchart LR
+    A[Start] --> B[n的开方再平方再四舍五入]
+    B ---->E[End]
+```
+
+2. 第二题
+
+```mermaid
+flowchart LR
+    A[Start] --> B{0 < bounce < 1？}
+    B -->|Yes| C{h > window？}
+    C --> D[count += 1
+        h *= bounce]
+    C ---->|No|H[End, return count or -1]
+    D --> F{h > window?}
+    F --> G[ count += 1]
+    G-->C
+    B ---->|No| E[End，return -1]
+```
+
+3. 第三题
+
+```mermaid
+flowchart LR
+    A[Start] --> B[依次相加sentence.count'a'\'e'\'i'\'o'\'u']
+    B ---->E[End]
+```
+
+4. 第四题
+
+```mermaid
+flowchart LR
+    A[Start] --> B{Is it?}
+    B -->|Yes| C[OK]
+    C --> D[Rethink]
+    D --> B
+    B ---->|No| E[End]
+```
 
 注意代码需要使用markdown的代码块格式化，例如Git命令行语句应该使用下面的格式：
 
@@ -212,8 +253,19 @@ def add_binary(a,b):
 请使用自己的语言并使用尽量简短代码示例回答下面的问题，这些问题将在实验检查时用于提问和答辩以及实际的操作。
 
 1. Python中的简单数据类型有那些？我们可以对这些数据类型做哪些操作？
+一、数字型
+
+- 整型,浮点型,布尔型,复数类型,字符串,列表,元组,集合,字典
+
 2. 为什么说Python中的变量都是标签？
-3. 有哪些方法可以提高Python代码的可读性？
+
+变量不需要事先声明
+变量的类型不需要声明
+每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。
+
+1. 有哪些方法可以提高Python代码的可读性？
+
+注释
 
 ## 实验总结
 
