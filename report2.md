@@ -4,7 +4,7 @@
 
 学号： B20210302126
 
-姓名： 张三
+姓名： 陶启睿
 
 Github地址：<https://github.com/xBoltgun/python_class.git>
 
